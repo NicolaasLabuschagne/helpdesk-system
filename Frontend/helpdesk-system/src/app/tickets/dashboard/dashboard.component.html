@@ -1,0 +1,15 @@
+<h2>Dashboard</h2>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Status</th>
+    <th>Priority</th>
+  </tr>
+  <tr *ngFor="let ticket of tickets">
+    <td>{{ ticket.title }}</td>
+    <td>{{ ticket.description }}</td>
+    <td>{{ ticket.status }}</td>
+    <td>{{ ticket.priority }}</td>
+  </tr>
+</table>
